@@ -41,6 +41,7 @@ void Solver::solve()
         assert(validatePathConsistency(l_path, demand));
         saveResolvedPath(l_path, demand);
     }
+    logResult(l_links);
 }
 
 void Solver::setupNodes(unsigned int p_numOfNodes)
